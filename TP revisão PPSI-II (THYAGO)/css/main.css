@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+body{
+	font-family: Arial, sans-serif;
+}
+
+#titulo{
+	color: white;
+	background-color: #B22222;
+	padding: 15px;
+}
+
+abbr{
+	text-decoration: none;
+}
+
+img{
+	float: right;
+}
+
+img:hover{
+  border: 10px solid #ddd;
+  transition: 50s;
+}
+
+address{
+	background-color: #A9A9A9;
+	margin-right: 900px;
+	font-style: normal;
+	padding: 10px;
+}
+
+.link{
+	color: black;
+}
+
+.link:hover{
+	color: #228B22;
+}
+
+h2::before{
+  content: "[atualizado] ";
+  color: red;
+}
+
+h2::after{
+  content: ", mermão!";
+  color: green;
+}
+
+
+/*p::first-letter{
+  background-color: red;
+  font-size: 60px
+}*/
+
+/* Seletores 
+
+<html>
+    <head>
+        <meta>
+        <title>
+    <body>
+        h1
+        h2
+        p
+            img
+        p
+        
+pseudoclasse:
+    :link
+    :visited
+    :hover
+    :active
+    :checked
+    :focus
+    :first-child
+    :last-child
+    :nth-child (odd) ou (even)
+    
+pseudoelemento:
+    ::after
+    ::before
+    ::first-line
+    ::first-letter
+*/
+
+/*
+-- Seletor Descendentes ( )
+
+ul li a{
+  background-color> yellow;
+}
+*/
+
+
+/*
+-- Seletor Filhos (>)
+
+ul>li>a{
+  background-color: yellow;
+}
+*/
+
+/*
+-- Seletores Universais (*)
+
+*.link{
+  
+}
+
+- CSS Reset
+*{
+  margin: 0;
+  padding:0;
+}
+*/
+
+/*
+-- Seletor Adjacantes (+)
+
+
+p+p{
+  background-color: yellow
+}
+
+
+p~p{
+  background-color: yellow
+}
+
+
+/*
+
+Seletor de atributos ([])
+*/
+
+address [href]::after{
+  content: url(../img/icon.png);
+  margin-left: 5px;
+}
+
+abbr[title]{
+  background-color: yellow;
+}
+
+/*
+[href*="fatec"] {
+  background-color: yellow;
+}
+
+[href^="http"] {
+  background-color: blue;
+}
+
+[href$="doc"], [href$="docx"]{
+  background-color: red;
+}
+[href$=".br"]{
+  background-color: red;
+}
+*/
+
+

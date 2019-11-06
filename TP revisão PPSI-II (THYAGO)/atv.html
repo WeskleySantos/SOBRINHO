@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title> formulario </title>
+	<style>
+	*{font-family: Verdana, sans-serif;}
+	
+	input:focus{
+		background-color:#F0E68C;
+		border-color: black;
+	}
+	
+	button{
+		background-color:#D3D3D3;
+		color:black;
+		padding: 15px;
+		margin:10px;
+	}	
+	
+	button:hover{
+		background-color: black;
+		color:#D3D3D3;
+	}
+	
+	#email,#senha {
+		border-style: solid;
+		padding:10px;  
+		margin:10px;
+		border-width: 3px;
+		border-color: #D3D3D3;
+	}
+	
+	label{ display:block;}
+	
+	fieldset>label{
+		width: 20%;
+		display:inline;
+	} 
+	
+	fieldset{
+		width: 20%;
+	}
+	</style>
+	
+</head>
+
+<body>
+<form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php">
+
+	<label for="email">E-mail</label>
+	<input type="email" placeholder="Seu e-mail" id="email" name="email" required>
+
+	<label for="senha">Senha</label>
+	<input type="password" placeholder="Sua senha" id="senha" name="senha" required  minlength="8" maxlength="8">
+
+
+	<fieldset>
+		<legend> Deseja assinar o nosso boletim? </legend>
+		<input type="radio" name="boletim" id="b1" value="s" checked>
+		<label for="b1">Sim</label>
+		
+		<input type="radio" name="boletim" id="b2" value="n">
+		<label for="b2">Não</label>
+
+	</fieldset>		
+	
+	<button>Confirmar</button>
+
+</form>
+
+</body>
+
+</html>

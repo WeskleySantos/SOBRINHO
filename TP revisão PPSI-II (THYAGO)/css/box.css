@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+div{
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+}
+
+.box1{
+	background-color: navy;
+	position: sticky;
+	top: 0;
+}
+
+.box2{
+	background-color: orange;
+	position: relative;
+	top: 15px;
+	left: 15px;
+	z-index: 2;
+}
+
+.box3{
+	background-color: maroon;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+.box4{
+	background-color: red;
+}
